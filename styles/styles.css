@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+}
+.main-header {
+  background-color: brown;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: repeat(2, 50px);
+}
+.main-header__logo {
+  padding-top: 5px;
+  grid-area: 1 / 1 / span 3 / 2;
+}
+.main-header__title {
+  color: white;
+  grid-area: 1 / 2 / 1 / span 3;
+  justify-self: center;
+  align-self: end;
+}
+.nav-menu {
+  grid-area: 2 / 2 / 2 / span 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.nav-menu__link {
+  color: white;
+  text-decoration: none;
+}
